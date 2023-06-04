@@ -11,10 +11,10 @@ fetch('https://fakestoreapi.com/products?limit=9')
           <h5>${values.title}</h5>
           <h6>${values.description}</h6>
           <h3>$ ${values.price}</h3>
+          <p class="card-details"><a href="details/detalhes.html?id=${values.id}">See details</a></p>
         </div>
       </div>`;
     });
-
     document.getElementById('catalogo').innerHTML = data1;
     
     if (data1 === "") {
